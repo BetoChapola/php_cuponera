@@ -1,0 +1,71 @@
+:root{
+    --titleFont : 'Comfortaa', cursive;
+    --formFont : 'Spartan', sans-serif;
+    --colorBody : #F2F2F2;
+    --colorForm : white;
+}
+
+html {
+box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+body{
+    background-color: var(--colorBody);
+    font-family: var(--formFont);
+}
+img{
+    max-width: 200px;
+    min-height: 200px;
+    margin: 0 auto;
+    background-color: #0A96A6;
+}
+.titulo{
+    text-align: center;
+    max-width: 100%;
+    font-size: 1rem;
+}
+.titulo h1{
+    font-family: var(--titleFont);
+    font-weight: 700;
+    color: #2168A6;
+}
+.titulo span{
+    color: #F2059F;
+}
+
+form{
+    background-color: var(--colorForm);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"]{
+    font-family: var(--formFont);
+    flex: 1 0 calc(100% - 1rem);
+    color: #2168A6;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px inset #F2059F;
+}
+
+.formulario .button{
+    font-family: var(--formFont);
+    flex: 1 0 calc(100% - 1rem);
+    color: white;
+    background-color: #0A96A6;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: .5rem;
+    margin-top: 1rem;
+}
